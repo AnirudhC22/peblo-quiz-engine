@@ -1,0 +1,30 @@
+# Web Framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# Database
+sqlalchemy==2.0.35
+
+# PDF Parsing (primary)
+PyMuPDF==1.24.10
+
+# PDF Parsing (fallback)
+pdfplumber==0.11.4
+
+# LLM Providers (install the ones you need)
+openai==1.51.0
+anthropic==0.34.2
+google-generativeai==0.8.2
+
+# Utilities
+python-multipart==0.0.12
+python-dotenv==1.0.1
+pydantic==2.9.2
+
+# Optional: Vector similarity (nice-to-have)
+# faiss-cpu==1.8.0
+
+# Testing
+pytest==8.3.3
+httpx==0.27.2
+pytest-asyncio==0.24.0

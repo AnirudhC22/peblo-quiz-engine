@@ -1,0 +1,106 @@
+{
+  "sample_ingest_response": {
+    "document_id": "f4a1b2c3-d4e5-6789-abcd-ef0123456789",
+    "file_name": "peblo_pdf_grade1_math_numbers.pdf",
+    "subject": "Math",
+    "grade": 1,
+    "total_pages": 12,
+    "chunks_created": 18,
+    "message": "Successfully ingested 18 content chunks."
+  },
+
+  "sample_chunk": {
+    "id": "c7d8e9f0-1234-5678-abcd-ef0123456789",
+    "document_id": "f4a1b2c3-d4e5-6789-abcd-ef0123456789",
+    "chunk_index": 3,
+    "topic": "Shapes",
+    "word_count": 124,
+    "text_preview": "A triangle has three sides and three corners. Triangles can be big or small. A square has four equal sides. A circle has no corners and is perfectly round..."
+  },
+
+  "sample_questions": [
+    {
+      "id": "q1a2b3c4-d5e6-7890-abcd-ef0123456789",
+      "question": "How many sides does a triangle have?",
+      "type": "MCQ",
+      "options": ["2", "3", "4", "5"],
+      "answer": "3",
+      "difficulty": "easy",
+      "topic": "Shapes",
+      "subject": "Math",
+      "grade": 1,
+      "chunk_id": "c7d8e9f0-1234-5678-abcd-ef0123456789",
+      "success_rate": 0.0
+    },
+    {
+      "id": "q2a2b3c4-d5e6-7890-abcd-ef0123456789",
+      "question": "A triangle has three sides.",
+      "type": "TrueFalse",
+      "options": ["True", "False"],
+      "answer": "True",
+      "difficulty": "easy",
+      "topic": "Shapes",
+      "subject": "Math",
+      "grade": 1,
+      "chunk_id": "c7d8e9f0-1234-5678-abcd-ef0123456789",
+      "success_rate": 0.0
+    },
+    {
+      "id": "q3a2b3c4-d5e6-7890-abcd-ef0123456789",
+      "question": "A ___ has four equal sides.",
+      "type": "FillBlank",
+      "options": [],
+      "answer": "square",
+      "difficulty": "medium",
+      "topic": "Shapes",
+      "subject": "Math",
+      "grade": 1,
+      "chunk_id": "c7d8e9f0-1234-5678-abcd-ef0123456789",
+      "success_rate": 0.0
+    }
+  ],
+
+  "sample_submit_answer_response": {
+    "is_correct": true,
+    "correct_answer": "3",
+    "explanation": null,
+    "new_difficulty": "medium",
+    "difficulty_message": "🔥 3 correct in a row! Leveling up to medium.",
+    "streak": 3,
+    "accuracy": 85.7
+  },
+
+  "sample_dashboard": {
+    "student_id": "S001",
+    "display_name": null,
+    "current_difficulty": "medium",
+    "total_attempted": 14,
+    "total_correct": 12,
+    "accuracy": 85.7,
+    "streak_current": 3,
+    "streak_best": 5,
+    "last_active": "2025-01-01T10:30:00",
+    "subject_breakdown": [
+      { "subject": "Math", "total": 8, "correct": 7, "accuracy": 87.5 },
+      { "subject": "Science", "total": 6, "correct": 5, "accuracy": 83.3 }
+    ],
+    "bookmarked_count": 2,
+    "recent_performance": [
+      { "question": "How many sides does a triangle have?", "subject": "Math", "difficulty": "easy", "correct": true },
+      { "question": "What do plants need to make food?", "subject": "Science", "difficulty": "easy", "correct": true }
+    ]
+  },
+
+  "sample_hint_response": {
+    "question_id": "q1a2b3c4-d5e6-7890-abcd-ef0123456789",
+    "hint": "Think about what makes a triangle different from a square. Count the pointy corners — the number of corners equals the number of sides!"
+  },
+
+  "sample_weak_areas": {
+    "student_id": "S001",
+    "weak_areas": [
+      { "topic": "Fractions", "subject": "Math", "accuracy": 33.3, "total_attempted": 6 },
+      { "topic": "Photosynthesis", "subject": "Science", "accuracy": 40.0, "total_attempted": 5 }
+    ]
+  }
+}
