@@ -18,17 +18,17 @@ An AI-powered educational content ingestion and adaptive quiz platform built wit
 │  /ingest  /generate-quiz  /quiz  /submit-answer         │
 │  /documents  /jobs  /students  /bookmarks  /sessions    │
 └────────────────────────┬────────────────────────────────┘
-          ┌──────────────┴──────────────┐
-          │                             │
+          ┌──────────────┴─────────────┐
+          │                            │
 ┌─────────▼──────────┐      ┌──────────▼──────────┐
-│   Service Layer     │      │   SQLite Database   │
-│  pdf_parser.py      │      │  documents          │
-│  llm_client.py      │      │  chunks             │
-│  quiz_generator.py  │      │  questions          │
-│  adaptive_engine.py │      │  student_profiles   │
-│  cheat_detection.py │      │  student_answers    │
-└─────────┬───────────┘      │  bookmarks          │
-          │                  │  cheat_sessions     │
+│   Service Layer    │      │   SQLite Database   │
+│  pdf_parser.py     │      │  documents          │
+│  llm_client.py     │      │  chunks             │
+│ quiz_generator.py  │      │  questions          │
+│ adaptive_engine.py │      │  student_profiles   │
+│ cheat_detection.py │      │  student_answers    │
+└─────────┬──────────┘      │  bookmarks          │
+          │                 │  cheat_sessions     │
 ┌─────────▼──────────┐      │  cheat_events       │
 │  Gemini 2.5 Flash  │      │  generation_jobs    │
 │  (Free Tier API)   │      └─────────────────────┘
